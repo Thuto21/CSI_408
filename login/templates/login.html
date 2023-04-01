@@ -1,0 +1,99 @@
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CT CRM Login Page</title>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+            <style>
+                body {
+                        background-image: url('{% static "images/crmhomepage.jpg" %}');
+                        background-position: top;
+                        background-repeat: no-repeat;
+                        background-size: 81.9% 95%;
+                    }
+                footer{
+                      margin-top: 40%;
+                      margin-right: 15%;
+                      margin-bottom: 10%;
+                      margin-left: 45%;
+                }
+                li a:hover {
+                      background-color: gray;
+                   }
+                div.container3{
+                      border: 3px solid lightblue;
+                      border-radius: 10px;
+                      width: 720px;
+                      block-size: 360px;
+                }
+
+        </style>
+</head>
+<body>
+ <div class="container">
+      <ul class="nav bg-info justify-content-center">
+        <li class="nav-item">
+            <h1><em>WELCOME BACK</em></h1>
+        </li>
+      </ul>
+ </div><br>
+  <div class="container2">
+      <ul class="nav justify-content-center">
+          <form method="post">
+              {% csrf_token %}
+              <li class=""nav-item>
+                  <label for="staffid"></label>
+                    <input type="text" name="staffid" id="staffid" placeholder="STAFF ID"><br><br><br><br>
+              </li>
+              <li class="nav-item">
+                  <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="PASSWORD"><br><br><br><br>
+              </li>
+              <li class="nav-item">
+                    <button type="submit">Login</button>
+              </li>
+          </form>
+      </ul>
+  </div>
+    <footer>
+        <div class="container3">
+            <ul class="nav bg-info">
+                <li class="nav-item">
+                    <p> <strong>We develop seamless software and UX/UI design.</strong><br>
+                    Outstanding responsive website that follows a fast go for market strategy and is reasy to be tested by your users.<br>
+                    We use cutting-edge technology and exceptional design to enhance your mobile app workflows.<br>
+                        Become a click-away through a mobile app.
+                    </p>
+                </li>
+
+                        <li class="nav-item">
+                            <h5><strong> Contact Us</strong></h5>
+                            <p>
+                                <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> +267 73 801 084 <br>
+                                    <img src="{% static 'images/location.png' %}" alt="location"> Plot 10239 Bontleng,Gaborone <br>
+                                        <img src="{% static 'images/mail.png' %}" alt="mail"> Plot 10239 Bontleng,Gaborone
+                            </p>
+                        </li>
+
+            </ul>
+
+            <ul class="nav bg-info justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="../../homepage/">BACK TO HOMEPAGE</a>
+                </li>
+            </ul>
+
+
+
+
+
+            <h6 class="nav bg-info">&copy 2023 <a href="#"> Compuware Technologies. All rights reserved.</a></h6>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% load static %}
+
+<html>
+<head>
+      <title>CT CRM HomePage</title>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <style>
+                body {
+                        background-image: url('{% static "images/crmhomepage.jpg" %}');
+                        background-position: top;
+                        background-repeat: no-repeat;
+                        background-size: 81.9% 95%;
+                    }
+                footer{
+                      margin-top: 40%;
+                      margin-right: 0%;
+                      margin-bottom: 10%;
+                      margin-left: 45%;
+                }
+                li a:hover {
+                      background-color: gray;
+                   }
+                div.container2{
+                      border: 3px solid lightblue;
+                      border-radius: 5px;
+                      width: 600px;
+                      block-size: 343px;
+                }
+
+        </style>
+</head>
+
+<body>
+    <div class="container">
+      <ul class="nav bg-info justify-content-center">
+        <li class="nav-item">
+            <h1><em> WELCOME TO COMPUWARE TECHNOLOGIES CRM SYSTEM </em></h1>
+        </li>
+      </ul>
+        <ul class="nav bg-info justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../login/login">LOGIN</a>
+            </li>
+        </ul>
+
+
+          {% block content %}
+          {% endblock %}
+    </div>
+    <footer>
+        <div class="container2">
+            <ul class="nav bg-info">
+                <li class="nav-item">
+                    <p> <strong>We develop seamless software and UX/UI design.</strong><br>
+                    Outstanding responsive website that follows a fast go for market strategy and is reasy to be tested by your users.<br>
+                    We use cutting-edge technology and exceptional design to enhance your mobile app workflows.<br>
+                        Become a click-away through a mobile app.
+                    </p>
+                </li>
+
+                        <li class="nav-item">
+                            <h5><strong> Contact Us</strong></h5>
+                            <p>
+                                <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> +267 73 801 084 <br>
+                                    <img src="{% static 'images/location.png' %}" alt="location"> Plot 10239 Bontleng,Gaborone <br>
+                                        <img src="{% static 'images/mail.png' %}" alt="mail"> Plot 10239 Bontleng,Gaborone
+                            </p>
+                        </li>
+
+            </ul>
+
+            <h6 class="nav bg-info">&copy 2023 <a href="#"> Compuware Technologies. All rights reserved.</a></h6>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
