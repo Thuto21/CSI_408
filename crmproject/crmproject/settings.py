@@ -78,7 +78,7 @@ DATABASES = {
             'NAME': 'project',
             'USER': 'mot01795',
             'PASSWORD': 'mot01795',
-            'HOST': '10.0.19.74',
+            'HOST': '10.0.19.74/phpmyadmin',
             'PORT': '3306'
         }
 }
