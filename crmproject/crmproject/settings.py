@@ -75,10 +75,10 @@ DATABASES = {
     'default':
         {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'project',
+            'NAME': 'mot01795',
             'USER': 'root',
-            'PASSWORD': '',
-            'HOST': 'localhost',
+            'PASSWORD': 'mot01795',
+            'HOST': '10.0.19.74/phpmyadmin',
             'PORT': '3306'
         }
 }
